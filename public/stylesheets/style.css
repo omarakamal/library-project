@@ -1,0 +1,45 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00b7ff;
+}
+
+h1 {
+  color: 15px;
+}
+
+#container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: 800px;
+  width: 1400px;
+  align-items: center;
+}
+
+#container > div {
+  background-color: #f1f1f1;
+  margin: 10px 10px 50px 10px;
+  width: 25%;
+  height: 20%;
+
+}
+
+input{
+  margin-right: 20px;
+}
+
+
+.nav-link{
+  margin: 0 10px;
+  text-decoration:none;
+  font-size: 15px;
+}
+
+#topnav{
+  height: 50px;
+}

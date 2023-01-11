@@ -1,0 +1,20 @@
+<form action="/books/{{_id}}/edit" method="POST">
+    <label for="">
+        Title
+        {{!-- value is an attribute to give an initial value for my input --}}
+        <input type="text" name="title" value="{{title}}">
+    </label>
+        <label for="">
+        Author
+        <input type="text" name="author" value="{{author}}">
+    </label>
+    <label for="">
+        Description
+    <textarea cols="30" rows="10" name="description">{{description}}</textarea>
+    </label>
+        <label for="">
+        rating
+        <input type="text" name="rating" value="{{rating}}">
+    </label>
+    <button type="submit">Submit Book</button>
+</form>

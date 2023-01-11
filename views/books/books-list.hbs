@@ -1,0 +1,22 @@
+<h1>Here is the list of all books</h1>
+
+<div id="container">
+
+{{#each result}}
+<div style="border: solid green; padding:0 0 10px 10px">
+<h2>{{title}}</h2>
+<h3>Author: 
+{{#each author_id}}
+{{name}}
+{{/each}}
+</h3>
+<p>rating: {{rating}}</p>
+<a href="/books/{{_id}}">Link to Book</a>
+<a style="margin-left:5px" href="/books/{{_id}}/edit">Edit Book</a>
+<form action="/books/{{_id}}/delete" method="POST">
+    <button>Delete Book</button>
+</form>
+</div>
+<br>
+{{/each}}
+</div>
